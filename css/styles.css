@@ -13,6 +13,7 @@
 
 --------Цвет кнопок------
 Первичный цвет кнопок: #F5F4FA
+Вторичный цвет кнопок: #2196F3
 
 --------Цвет иконок------
 Первичный цвет иконок: #AFB1B8
@@ -20,13 +21,13 @@
 
 --------Цвет фона иконок------
 Первичный цвет фона иконок: #ffffff
-Вторичный цвет фона иконок: #ffffff
-
+Вторичный цвет фона иконок: rgba(255, 255, 255, 0.1)
 
 --------Цвет акцента-----
 Первичный цвет акцента текста: #2196F3
 Первичный цвет акцента элемента: #2196F3
 Вторичный цвет акцента элемента: #ffffff
+Третичный цвет акцента элемента: #188CE8
 
 --------Время перехода/анимации-----
 Первичное время перехода/анимации: 250ms
@@ -46,6 +47,7 @@
   --logo-basic-text-color: #000000;
 
   --primary-button-color: #f5f4fa;
+  --secondary-button-color: #2196f3;
 
   --primary-icon-color: #afb1b8;
   --secondary-icon-color: #ffffff;
@@ -53,9 +55,11 @@
   --primary-bg-color-icon: #ffffff;
   --secondary-bg-color-icon: rgba(255, 255, 255, 0.1);
 
+  /* Палитра акцентов */
   --primary-text-accent-color: #2196f3;
   --primary-element-accent-color: #2196f3;
   --secondary-element-accent-color: #ffffff;
+  --tertiary-element-accent-color: #188ce8;
 
   /* Переменная зазоров в сетках элементов */
   --flexbox-items-gap: 30px;
@@ -329,7 +333,7 @@ img {
   border-radius: 4px;
 
   color: var(--secondary-text-color);
-  background-color: var(--primary-element-accent-color);
+  background-color: var(--secondary-button-color);
 
   font-family: Roboto, sans-serif;
   font-style: normal;
