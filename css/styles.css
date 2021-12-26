@@ -584,17 +584,26 @@ textarea:focus {
 
   margin-right: 8px;
 
-  width: 15px;
+  width: 16px;
   height: 15px;
 
   border: 2px solid #212121;
   border-radius: 2px;
+
+  transition-property: border;
+  transition-duration: var(--primary-duration);
+  transition-timing-function: var(--primary-timing-function);
 }
 
 .checkbox-icon {
   position: absolute;
   top: -2px;
   left: -2px;
+}
+
+.policy-check:hover + .checkbox,
+.policy-check:focus + .checkbox {
+  border: 2px solid var(--primary-element-accent-color);
 }
 
 .policy-check:checked + .checkbox {
@@ -629,7 +638,7 @@ textarea:focus {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: cursor background-color;
+  transition-property: background-color;
   transition-duration: var(--primary-duration);
   transition-timing-function: var(--primary-timing-function);
 }
