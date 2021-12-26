@@ -533,6 +533,33 @@ textarea:focus {
   border: 1px solid var(--primary-element-accent-color);
 }
 
+.policy-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.label-policy {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-policy::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-color: tomato;
+}
+
 /* Преимущества / особенности ВебСтудии */
 
 .benefits-list {
