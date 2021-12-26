@@ -580,18 +580,21 @@ textarea:focus {
 .checkbox {
   display: inline-block;
 
+  position: relative;
+
   margin-right: 8px;
 
-  width: 16px;
+  width: 15px;
   height: 15px;
-
-  background-image: url(../images/svg-list/svg-hw-6/optimized-svg/icon-check.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-origin: border-box;
 
   border: 2px solid #212121;
   border-radius: 2px;
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
 }
 
 .policy-check:checked + .checkbox {
